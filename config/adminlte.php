@@ -790,7 +790,7 @@ return [
             'can' => 'manage-blog',
         ],
         [
-            'text' => 'pages',
+            'text' => 'Dashboard',
             'url' => 'admin/pages',
             'icon' => 'bi bi-file-earmark',
             'label' => 4,
@@ -798,16 +798,17 @@ return [
         ],
         ['header' => 'account_settings'],
         [
-            'text' => 'profile',
+            'text' => 'Data Master',
             'url' => 'admin/settings',
             'icon' => 'bi bi-person',
         ],
         [
-            'text' => 'change_password',
+            'text' => 'Data Siswa',
             'url' => 'admin/settings',
             'icon' => 'bi bi-lock',
         ],
         [
+
             'text' => 'multilevel',
             'icon' => 'bi bi-share',
             'submenu' => [
