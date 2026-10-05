@@ -37,7 +37,7 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 4',
+    'title' => 'Kasir Al-Wasliyah',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -77,8 +77,8 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
-    'logo_img' => 'vendor/adminlte/dist/assets/img/AdminLTELogo.png',
+    'logo' => '<b>Kasir2</b>',
+    'logo_img' => 'vendor/adminlte/dist/assets/img/logo aw.png',
     'logo_img_class' => 'brand-image opacity-75 shadow',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs opacity-75',
@@ -100,7 +100,7 @@ return [
     'auth_logo' => [
         'enabled' => false,
         'img' => [
-            'path' => 'vendor/adminlte/dist/assets/img/AdminLTELogo.png',
+            'path' => 'vendor/adminlte/dist/assets/img/logo aw.png',
             'alt' => 'Auth Logo',
             'class' => '',
             'width' => 50,
@@ -136,7 +136,7 @@ return [
         'enabled' => true,
         'mode' => 'fullscreen',
         'img' => [
-            'path' => 'vendor/adminlte/dist/assets/img/AdminLTELogo.png',
+            'path' => 'vendor/adminlte/dist/assets/img/logo aw.png',
             'alt' => 'AdminLTE Preloader Image',
             'effect' => 'animation__shake',
             'width' => 60,
@@ -796,17 +796,19 @@ return [
             'label' => 4,
             'label_color' => 'success',
         ],
-        ['header' => 'account_settings'],
+        
         [
             'text' => 'Data Master',
-            'url' => 'admin/settings',
-            'icon' => 'bi bi-person',
-        ],
-        [
-            'text' => 'Data Siswa',
-            'url' => 'admin/settings',
-            'icon' => 'bi bi-lock',
-        ],
+            'icon' => 'bi bi-arrow-90deg-right',
+            'submenu' => [
+                [
+                    'text' => 'Data Siswa',
+                    'url' => 'admin/settings',
+                    'icon' => 'bi bi-circle',
+                ],
+            ],
+],
+        
         [
 
             'text' => 'multilevel',
