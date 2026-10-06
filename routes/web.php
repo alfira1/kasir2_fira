@@ -2,6 +2,13 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SiswaController;
+
+Route::get('/siswa/cetak-pdf', [SiswaController::class, 'cetakPdf'])
+    ->name('siswa.cetak-pdf');
+    
+Route::resource('siswa',SiswaController::class);
+
 
 Route::get('/', function () {
     return view('welcome');
