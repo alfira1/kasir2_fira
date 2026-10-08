@@ -818,20 +818,20 @@ return [
             'label_color' => 'success',
         ],
         
+        ['header' => 'account_settings'],
         [
-            'text' => 'Data Master',
-            'icon' => 'bi bi-arrow-90deg-right',
-            'submenu' => [
-                [
-                    'text' => 'Data Siswa',
-                    'url' => 'admin/settings',
-                    'icon' => 'bi bi-circle',
-                ],
-            ],
-],
-        
+            'text' => 'profile',
+            'url' => 'admin/settings',
+            'icon' => 'fas fa-fw fa-user',
+            
+        ],
         [
-
+            'text' => 'change_password',
+            'url' => 'admin/settings',
+            'icon' => 'fas fa-fw fa-lock',
+            
+        ],      
+        [
             'text' => 'multilevel',
             'icon' => 'bi bi-share',
             'submenu' => [
